@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts.css" />
+    <script src="../dug.js"></script>
+</head>
+<body>
+
+  <div id="github">
+  <div id="githubs">
+        <a href="{{data.login1.0.url1}}">
+          <h3>{{data.login1.0.url2}}</h3>
+          <img src='{{data.login1.0.url3}}'>
+        </a>
+      </div></div>
+  <script>
+  
+    dug({
+		cachedData : 
+		{
+		  "data": 
+				{
+				"login1": 
+				[
+					{
+						'url1':"https://avatars2.githubusercontent.com/u/1577835?v=4",
+						'url2':"https://avatars2.githubusercontent.com/u/1577835?v=4",
+						'url3':"https://avatars2.githubusercontent.com/u/1577835?v=4",
+					},
+					{
+						'url1':"https://avatars2.githubusercontent.com/u/1577835?v=4",
+						'url2':"https://avatars2.githubusercontent.com/u/1577835?v=4",
+						'url3':"https://avatars2.githubusercontent.com/u/1577835?v=4",
+					}
+				]
+			}
+		},
+      target: 'github',
+      error: function(){
+        console.log('error');
+      },
+      template: document.getElementById('githubs').innerHTML,
+    });
+  </script>
+</body>
+</html>
